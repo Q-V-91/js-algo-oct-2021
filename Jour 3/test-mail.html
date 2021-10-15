@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test if numbers</title>
+</head>
+
+<body>
+    <div id="target"></div>
+
+    <script>
+    
+     
+       //tester si une seule @ ou . pas d'espaces
+        var txt = prompt("Entrez un texte");
+
+        var isAt = false;
+
+        var isPoint = false;
+
+        var noSpace = true;
+
+
+
+        var starter =0
+
+
+        for (var starter = 0; starter < txt.length; starter++) {
+           //test if @ is included
+            code = txt.charCodeAt(starter)
+            //Si on trouve un espace e-mail non valide stop la boucle
+            if (code =32 ) {
+                noSpace = false;
+                
+                
+                ;  
+            }
+        
+
+            if (code == 64) {
+                isAt = true;
+               var nberIsAT= count(isAt);
+             }
+
+            if (code == 46) {
+                 isPoint =true
+             }
+
+          
+
+             
+        }
+
+        console.log("Email sans espace: " + noSpace);
+
+        console.log(nberIsAT);
+        console.log("@ présent: " + isAt);       
+        console.log(". présent: " + isPoint);  
+
+         
+
+
+
+        </script>
+
+</body>
+
+</html>

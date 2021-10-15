@@ -1,0 +1,18 @@
+-SI téléphone hors tension
+    -Allumer le téléhpone
+
+-SI téléphone verrouillé
+    -SI reconnaissance faciale
+        -Dev avec faciale
+    -SI empreinte digitale
+        -dev avec doigt
+    -SI schéma
+
+    -SI Code PIN
+
+-SINON:
+    -ouvrir l'application photo
+
+    -viser la chose a prendre en photo
+
+    -appuyer sur le bouton pour prendre la photo

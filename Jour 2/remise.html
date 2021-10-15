@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remise</title>
+    <script>
+        //Define Tax const
+        const TAX = 1.2;
+        //Ask for qty of product
+        var qtyProducts = prompt("Quantité commandée",1)
+        qtyProducts = parseInt(qtyProducts);
+        //Cost to the unit without tax
+        const unitCostNoTax = 12
+        //Cost to the unit with tax
+        var unitCostTax = (unitCostNoTax*TAX);
+        //Cost*qty no tax
+        var fullCostNoTax = unitCostNoTax*qtyProducts;
+        //cost*qty with tax
+        var totalWithoutPriceCut = unitCostTax*qtyProducts
+
+        //Define discounts--------------- this is fucking clever-----------
+        const DISCOUNT_1_CONDITION = 400;
+        const DISCOUNT_1_RATE = .95;
+        const DISCOUNT_2_CONDITION = 1200;
+        const DISCOUNT_2_RATE = .90;
+
+        //console.log(totalWithoutPriceCut)
+
+        
+        //Test if NaN
+        if (isNaN(qtyProducts))
+        {
+
+            console.log("Vous devez saisir un quantité numérique")
+        };
+
+        //If price between 400 and 1200 5% discount
+
+        if (fullCostNoTax >= DISCOUNT_1_CONDITION && fullCostNoTax< DISCOUNT_2_CONDITION){
+           var totalWithPriceCutTax95= (fullCostNoTax*DISCOUNT_1_RATE)*TAX
+
+            console.log(totalWithPriceCutTax95)
+                        
+        }
+
+        else if (fullCostNoTax>= DISCOUNT_2_CONDITION){
+           var totalWithPriceCutTax90= (fullCostNoTax*DISCOUNT_2_RATE)*TAX
+
+            console.log(totalWithPriceCutTax90)
+            
+            
+        }
+
+
+        else if (fullCostNoTax <400) {
+            console.log(totalWithoutPriceCut)
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document switch</title>
+    <script>
+        // fuir 1 combattre 2 se cacher 3 var
+        var action = parseInt(prompt("Choisissez entre \n1: fuir \t2: combattre \t3: se cacher \n(entrez le chiffre correspondant) "));
+
+        //Check if action is the right kind
+
+        switch (action) {
+
+            case 1:
+                {
+                    var conf = confirm("Etes vous rapide?")
+
+                    if (conf == true) {
+                        console.log("Vous vous sauvez de justesse")
+                    }
+                    else {
+                        console.log("Le troll vous rattrape et vous dévore")
+                    }
+                } break;
+
+            case 2:
+                {
+                    var conf = confirm("Etes vous fort?")
+
+                    if (conf == true) {
+                        console.log("Vous massacrez ce pauvre troll")
+                    }
+                    else {
+                        console.log("Le troll vous assome et vous dévore")
+                    }
+                } break;
+
+
+
+
+            case 3:
+                {
+                    var conf = confirm("Etes vous furtif?")
+
+                    if (conf == true) {
+                        console.log("Le troll ne vous voit pas et passe son chemin")
+                    }
+
+                    else {
+                        console.log("Le troll vous trouve et vous dévore")
+                    }
+                } break;
+
+            //If input not 1,2 or 3 display this
+            default: {
+                console.log("Veuillez taper 1, 2 ou 3")
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

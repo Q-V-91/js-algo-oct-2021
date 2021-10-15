@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <script>
+        // define var prompt nbr
+        var fizzbuzz= prompt ("Entrez un nombre");
+        // parse it
+        fizzbuzz= parseInt(fizzbuzz);
+
+        //Test if not a NaN
+        /*if (isNaN(fizzbuzz))
+        {
+            console.log("Vous devez saisir un chiffre/Nombre")
+        };*/
+
+        
+        //if multiple of 3 AND 5 show fizzbuzz
+        if (fizzbuzz %3 == 0 && fizzbuzz %5== 0)
+        {
+            console.log("fizzbuzz")
+        }
+        //if multiple of 5, show buzz
+
+        else if (fizzbuzz %5 == 0){
+            console.log("buzz")
+        }
+        //if multiple of 3, show fizz
+        else if (fizzbuzz %3 ==0)
+        {
+            console.log("fizz")
+        }
+        //If not multiple of 3 or 5 show input number
+        else {
+            console.log(fizzbuzz)
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

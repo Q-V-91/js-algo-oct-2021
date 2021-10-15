@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bjr script m2i</title>
+    <!--<script src="js/script1.js"></script>-->
+    <script>
+       //Problem Data
+       var cm = prompt("Vos cm",189);
+       
+       //Get the main Feet value 
+       //var feetNoParse = (cm/30.48)
+
+       //Get only full value for feet
+       var feet = parseInt(cm/30.48);
+       //define how much is left for the inches
+       var inch = ((cm)-(feet*30.48))/2.54;
+       //Get only 2 decimals
+       var inchbetter = ((parseInt (inch*100))/100)
+       
+       //Calculate
+       var result= feet + " pieds " + inchbetter +" pouces";
+
+       // parseInt(5.87) //donne 5
+       //Show result
+            //console.log("feet"+ feet);
+            //console.log("feetNoParse" + feetNoParse);
+            console.log(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

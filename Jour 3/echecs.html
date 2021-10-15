@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echecs</title>
+</head>
+
+<body>
+    <div id=checkmate style="background-color:peachpuff; border:2px solid black;">
+
+
+
+    </div>
+
+    <script>
+
+        var output = document.getElementById("checkmate");
+
+        var html = `<table style="border-collapse: collapse;"><tbody>`;
+
+        const tableColumn =8
+
+        
+
+        var n = "Block";
+
+        htmlOut = "";
+
+            //ORIGINAL TYPED WITHOUT INTERNET'S HELP
+        /*       for (var i = 1; i <= 8; i++) {
+                   
+                   if (i%2 ==0){
+                   html += `<td style="background-color:white; border:1px solid black; width:70px; height: 70px;">`+(n + i)+"</td>";
+                  
+                       
+                   htmlOut = "<tr>"+ html.repeat(8) +"</tr>";
+               }
+                   else {
+                       html += `<td style="color:white;background-color:black; border:1px solid black; width:70px; height: 70px;">`+(n + i)+"</td>";
+                   
+                   
+                       htmlOut = "<tr>"+ html.repeat(8) +"</tr>";
+                   }
+       
+               }*/
+
+               //WITH A LITTLE HELP FROM INTERNET
+               
+        for (var lines = 1; lines <= 8; lines++) {
+            html += "<tr>";
+
+            for (var column = 1; column <= 8; column++) {
+
+                if ((lines + column) % 2 != 0) {
+                    html += `<td style="background-color:white; border:1px solid black; width:70px; height: 70px;">` + (n) + "</td>";
+
+
+                   
+                }
+
+                else {
+                    html += `<td style="color:white;background-color:black; border:1px solid black; width:70px; height: 70px;">` + (n) + "</td>";
+
+
+                   
+                }
+
+            }
+            html += "</tr>";
+
+        }
+
+        html += "</tbody></table>";
+        output.innerHTML = html;
+
+
+
+    </script>
+
+
+</body>
+
+</html>

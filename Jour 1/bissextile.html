@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bissextile script m2i</title>
+    <!--<script src="js/script1.js"></script>-->
+    <script>
+
+        
+
+        var year = prompt("Entrer une année");
+        year = parseInt(year);
+        var yearB = year %400 ==0 || (year%4==0 && ! year%100 == 0);
+
+        console.log("Bissextile : ", yearB); 
+
+        //Doesn't fucking work
+        
+        /*if (year %400 == 0 || year %4 == 0 ) 
+        {
+            var yearB = true;
+            
+        }
+
+     
+        if (year % 100 == 0) {
+            var yearB = false;
+        }
+
+        
+
+        
+
+      
+        if (yearB == true) {
+            
+            console.log("Année bissextile");
+            console.log(year %4)
+            console.log(year%100)
+            console.log(year%400)
+        }
+
+        else {
+            console.log("Année non bissextile");
+            console.log(year %4)
+            console.log(year%100)
+            console.log(year%400)
+        }*/
+
+
+
+        
+
+ 
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

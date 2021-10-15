@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>si note same</title>
+</head>
+
+<body>
+    <div id="target"></div>
+
+    <script>
+        /*Définir un tableau de nombres
+    
+    calculer la moyenne
+    
+    trouver l'indice et la valeur
+    du nombre le plus grand*/
+
+        const out = document.getElementById("target");
+        const nbers = [1, 2, 3, 20, 5, 18];
+
+        var input = prompt("entrez une note en chiffre")
+
+        function searsh(input, nbers) {
+
+            let finded = false;
+
+            for (item of nbers) {
+
+                if (item == input) {
+                    finded = true;
+                    break;
+                }
+            }
+            return finded;
+        }
+
+        //argument liste , true
+
+        
+
+
+        console.log(searsh(input, nbers))
+
+        //out.innerHTML = ;
+    </script>
+
+
+</body>
+
+</html>

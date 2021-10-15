@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // fuir 1 combattre 2 se cacher 3 var
+        var action = prompt("Choisissez entre 1: fuir, 2: combattre ou 3: se cacher (entrez le chiffre correspondant) ")
+
+        //Check if action is the right kind
+        if (action == 1 || action == 2 || action == 3) {
+               
+            //if type 1 get to option 1
+                if (action == 1)
+            {
+                var conf=confirm("Etes vous rapide?")
+
+                if(conf==true){
+                    console.log("Vous vous sauvez de justesse")
+                }
+                else {
+                    console.log("Le troll vous rattrape et vous dévore")
+                } 
+            }// close are you fast
+
+            //if type 2 get to option 2
+            if (action == 2)
+            {   var conf=confirm("Etes vous fort?")
+
+                if(conf==true){
+                    console.log("Vous massacrez ce pauvre troll")
+                }
+                else {
+                    console.log("Le troll vous assome et vous dévore")
+                }
+            }//close are you strong
+
+            //if type 3 get to option 3
+            if (action == 3)
+            {
+                var conf=confirm("Etes vous furtif?")
+
+                if(conf==true){
+                    console.log("Le troll ne vous voit pas et passe son chemin")
+                }
+
+                else {
+                    console.log("Le troll vous trouve et vous dévore")
+                }
+            }//close are you stealthy
+        }
+        //If input not 1,2 or 3 display this
+        else {
+            console.log("Veuillez taper 1, 2 ou 3")
+        }
+
+         
+        
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+

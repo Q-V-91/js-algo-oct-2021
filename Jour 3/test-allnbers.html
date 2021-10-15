@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test if numbers</title>
+</head>
+
+<body>
+    <div id="target"></div>
+
+    <script>
+        /*   var output = document.getElementById("target");
+   
+           var html = "<ul>";
+   
+           var txt = prompt("saisi un truc");
+   
+           for (var i =txt.length-1; i >= 0; i--) {
+               html += "<li>" + txt.charAt(i) + "</li>";
+           }
+   
+           html += "</ul>";
+           output.innerHTML = html;
+   
+   
+   // Boucler sur les indices de la chaîne
+   //de 0 à taille de la chaine-1
+           for(var index in txt){
+               console.log(index + "=" + txt.charAt(index))
+           }
+           console.log("dernier :" + index);
+           
+           //Boucler sur les caractères
+           for (letter of txt) {
+               console.log(letter)
+           }*/
+
+
+
+        //si  no trouvée renvoi -1
+        var foundIndex = -1;
+        var txt = prompt("Entrez un texte");
+
+        var isNumber = true;
+
+
+
+        for (var i = 0; i < txt.length; i++) {
+            code = txt.charCodeAt(i)
+            if (!(code >= 48 && code <= 57)) {
+                isNumber = false;
+                // On a trouvé une capitale
+                // inutile de continuer la boucle
+                break;
+            }
+        }
+
+        console.log(isNumber);        
+
+        </script>
+
+</body>
+
+</html>

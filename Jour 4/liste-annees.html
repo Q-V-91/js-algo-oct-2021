@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test emails</title>
+
+    <!--Link to Js functions-->
+    <script src="toolsbox.js"></script>
+
+   
+
+</head>
+<body>
+
+    <div id=year>
+
+
+    </div>
+
+
+
+    <script>
+        var output = document.getElementById("year");    
+        let startYear = prompt("année début de liste");
+        let numberOfYears = prompt("année de fin de liste");
+        startYear = parseInt(startYear);
+        numberOfYears = parseInt(numberOfYears);
+        html=(getYearComboBox(startYear, numberOfYears));
+        output.innerHTML = html;
+
+    </script>
+    
+</body>
+</html>

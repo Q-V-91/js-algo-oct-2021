@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Few test functions</title>
+</head>
+<body>
+    <script>
+        function add (a, b = 5){
+            return a + b;
+        }
+
+        console.log(add(3));
+
+        //Ne pas faire ça, la variable va se faire écraser a chaque fois, voir pour la mettre en 2 eme ou échanger
+        function substract(a = 2 , b) {
+            return a - b;
+        }
+
+        console.log(substract(2, 3))
+
+        function greet(name, firstName, title ="Miss"){
+
+            return "Hello " + title + " " + name + " " + firstName;
+        }
+
+        console.log(greet("Li Britania", "Cornelia", "Hime-sama"));
+
+    </script>
+</body>
+</html>

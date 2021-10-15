@@ -1,0 +1,40 @@
+SI voiture eteinte
+    SI voiture push to start - boite auto
+        avoir la clé sur soit
+        Appuyer sur le frein
+        Appuyer sur le bouton start
+
+    SI voiture push to start - boite manuelle
+        appuyer sur l'embrayage
+        mettre au point mort
+        avoir la clé sur soit
+        Appuyer sur le frein
+        Appuyer sur le bouton start
+
+    SI voiture à clé - boite manuelle
+        insérer la clé
+        appuyer sur l'embrayage
+        mettre au point mort
+        rester apuuyé sur l'embrayage
+        tourner la clé jusqu'au bout
+        relacher
+
+    SI voiture à clé - boite auto
+        insérer la clé
+        appuyer sur le frein
+        tourner la clé jusqu'au bout
+        relacher la clé
+
+SI voiture démarrée
+    SI voiture - boite auto
+        SI voiture vers l'avant
+            Mettre le sélecteur sur D
+            Mettre le clignotant vers la direction souhaitée
+
+
+        SI voiture vers l'arrière
+            Mettre le sélecteur sur R
+            Mettre le clignotant vers la direction souhaitée
+
+
+    SI voiture - boite manuelle

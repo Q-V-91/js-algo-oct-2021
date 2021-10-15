@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liste années</title>
+</head>
+
+<body>
+
+    <div id="year">
+
+
+    </div>
+    <!--Permet d'afficher les 10 prochaines années-->
+    <script>
+
+        //TURD
+        /*
+        var yearTen =""
+        var currentYear = new Date().getFullYear();
+       
+        html = "<select>"
+        var output = document.getElementById("year");
+ 
+        for(var i=1; i <= 10; i++) {
+ 
+              "<option>" + (currentYear+i) + "</option>";          
+         }
+         
+         html+= "</select">;
+ 
+         output.innerHTML= html;
+ 
+         console.log(yearsOut);*/
+
+        var output = document.getElementById("year");
+        var currentYear = new Date().getFullYear();
+
+        var html = "<select>";
+
+        var n = currentYear;
+        n = parseInt(n);
+
+        for (var i = 0; i <= 10; i++) {
+            html += "<option>" + (n + i) + "</option>";
+        }
+
+        html += "</select>";
+        output.innerHTML = html;
+
+    </script>
+</body>
+
+</html>

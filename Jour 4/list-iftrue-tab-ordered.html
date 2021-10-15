@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>si note same ordered</title>
+</head>
+
+<body>
+    <div id="target"></div>
+
+    <script>
+        /*Définir un tableau de nombres
+    
+    calculer la moyenne
+
+    tableau en 2 parties 
+    
+    trouver l'indice et la valeur
+    du nombre le plus grand*/
+
+        /*  const out = document.getElementById("target");
+          const nbers = [1, 2, 3, 20, 5, 18];
+  
+          var input = prompt("entrez une note en chiffre")
+  
+          function searsh(input, nbers) {
+  
+              let finded = false;
+  
+              for (item of nbers) {
+  
+                  if (item == input) {
+                      finded = true;
+                      break;
+                  }
+              }
+              return finded;
+          } */
+
+        //argument liste , true
+
+        const nbers = [1, 5, 25, 34, 60, 80, 123, 800]
+        function triBinaire(search, nbers) {
+            let start = 0;
+            let finish = nbers.length - 1;
+
+            while (finish >= start) {
+                let center = parseInt((start + finish) / 2);
+                let value = nbers[center];
+
+                if (search > value) {
+                    start = center + 1;
+                }
+                else if (search < value) {
+                    finish = center - 1;
+                }
+                else {
+                    return true;
+
+                }
+
+            }
+            return false;
+        }
+
+
+
+        console.log(triBinaire(1, nbers))
+
+        //out.innerHTML = ;
+    </script>
+
+
+</body>
+
+</html>

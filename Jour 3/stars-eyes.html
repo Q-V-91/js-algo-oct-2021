@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars</title>
+</head>
+
+<body>
+
+    <div id="target"></div>
+    <div id="target2"></div>
+
+    <script>
+
+////////////////////////////////////////////////////////////////////////
+//Increasing H titles//
+
+        //const name = prompt("Votre nom")//
+        var stars ="";
+        var starsOut ="";
+
+        //Ciblage d'un élément de la page html
+        var output = document.getElementById("target");
+
+        var html ="";
+        
+
+        for(var i=1; i <= 6; i++) {
+            stars = "*";
+            
+            starsOut += stars.repeat(i) + "\n";
+        }
+
+        console.log(starsOut);
+        //output.innerHTML = starsOut += stars.repeat(i) + "\n";
+
+        //ou
+        // var star ="*";
+        // console.log(star.reapeat(3));
+
+//////////////////////////////////////////////////////////////////////
+//Decreasing H titles//
+
+    /*    var output = document.getElementById("target2");
+
+        var html2 ="";
+
+        for(var j=5; j >= 1; j--) {
+            //html2 +="<h"+j+"> Hello </h"+j+">";
+            html2 += `<h${j}>Bonjour</h${j}>`;
+        }
+
+        output.innerHTML = html2;
+        */
+
+ ///////////////////////////////////////////////////////////////////////     
+ /*
+                //Variables of problem
+                    // Sum of all input
+                var sum = 0;
+                // Maximum values at whuch point we stop asking for input
+                var max = 10;
+        
+                // Until sum is superior to max: execute
+                while (true) {
+                    // Asking for input
+                    var n = prompt("Un nombre");
+                    //add variable sum to input
+                    sum = sum + parseInt(n);
+        
+                    if (sum > max){
+                    break;}
+                }
+                //Display sum
+                console.log(sum);
+                */
+        ////////////////////////////////////////////////////////////////
+
+       /* var n = 0;
+        while (isNaN(n) || n < 0) {
+            n = prompt("Un nombre positif")
+            n = parseInt(n);
+        }
+        console.log(n);*/
+        /////////////////////////////////////////////////
+       /// for (init; condition; express) {instruct} /// boucle
+      /////////////////////////////////////////////////
+    </script>
+
+</body>
+
+</html>

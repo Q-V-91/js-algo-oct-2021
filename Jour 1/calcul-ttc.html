@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bjr script m2i</title>
+    <!--<script src="js/script1.js"></script>-->
+    <script>
+        //Problem Data
+        var ht = prompt("Le montant");
+        var taux = prompt("Le taux");
+        var saisieValide = true;
+
+        //Data conversion
+        ht = parseFloat(ht);
+        taux = parseFloat(taux);              
+
+        //Test of values
+
+        if (isNaN(taux)) {
+            console.log("Vous devez saisir un nombre pour le taux");
+            saisieValide = false;
+
+        }
+
+        if (isNaN(ht)) {
+            console.log("Vous devez saisir un nombre pour le montant");
+            saisieValide = false;
+        }
+
+        if (taux > 100) {
+            console.log("veuillez entrer un nombre inférieur à 100 pour le taux");
+            saisieValide = false;
+        }
+        if (taux <= 0) {
+            console.log("Veuillez entre un nombre positif");
+            saisieValide = false;
+        }
+
+        //See if var saisie is valid
+        if(saisieValide == true) {
+        //Calculate
+        var ttc = ht * 1 + (ht * taux / 100);
+        //Show result
+        console.log(ttc);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

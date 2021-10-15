@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+</head>
+<body>
+    <script>
+        function hello(name){
+            console.log("Hello " + name);
+        }
+        
+        hello("world");
+        hello("bitch");
+
+        function greet(name, title){
+            console.log("Bonjour " + title + " " + name);
+
+        }
+
+        greet("Cramer", "Bob");
+
+
+        function hello1(name){
+            return "Hello1 " + name;
+        }
+
+        var msg = hello1("world");
+        console.log(msg);
+
+        function add(n1, n2){
+            return n1 + n2;
+        }
+
+        console.log(add(5,8));
+
+
+        // Calcul prix TTC
+        // paramètres: prix HT, TVA
+        //return prix TTC 
+        //ex: TTC(500,19.7)
+
+        function TTC(priceNoTax, tva){
+            return (priceNoTax*(1+(tva/100)));
+        }
+
+        console.log(TTC(500,10))
+
+
+
+    </script>
+</body>
+</html>
